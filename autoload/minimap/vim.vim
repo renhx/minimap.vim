@@ -278,7 +278,7 @@ function! s:handle_autocmd(cmd) abort
             " echom 'VimEnter,DiffUpdated *'
             call s:minimap_diffoff()
         elseif a:cmd == 8           " TabLeave *
-            echom 'TabLeave *'
+            " echom 'TabLeave *'
             call s:tab_leave_handler()
         endif
     endif
