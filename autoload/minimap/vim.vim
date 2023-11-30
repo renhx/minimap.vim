@@ -66,6 +66,7 @@ endfunction
 function! s:tab_leave_handler() abort
     " Nuke our state - we don't keep a per-tab cache so we need to rebuild on
     " any tab change
+    call s:clear_highlights()
     let s:last_pos = {}
     let s:last_range = {}
     let s:win_info = {}
